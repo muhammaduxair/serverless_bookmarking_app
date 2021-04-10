@@ -14,7 +14,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## App Hosted Link
 
-Open Link To View App [https://serverless-todo-muzair.netlify.app/](https://serverless-todo-muzair.netlify.app/)
+Open Link To View App [https://serverless-bookmarking-muzair.netlify.app/](https://serverless-bookmarking-muzair.netlify.app/)
 
 ## 🚀 Quick start
 
