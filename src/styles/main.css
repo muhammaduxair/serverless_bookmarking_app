@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap");
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  height: 100vh;
+}
+.mainContainer .leftBox {
+  background-color: #c51539;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftBox > p {
+  font-size: 50px;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+}
+.leftBox > div {
+  margin-top: 50px;
+  padding: 0 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.leftBox > div > .inpField {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.leftBox > div > .colorBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.leftBox > div > .colorBox > p {
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.leftBox > div > .colorBox > input {
+  background: none;
+  border: none;
+  width: 50px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.leftBox > div > .addBtn {
+  align-self: flex-end;
+  padding: 5px 30px;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #c51539;
+  font-family: "Acme", sans-serif;
+}
+.leftBox > div > .addBtn:hover {
+  background-color: #e7e3e3;
+}
+.leftBox > .author {
+  margin-top: auto;
+  padding: 20px;
+  display: flex;
+  align-self: flex-end;
+}
+.author > p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Acme", sans-serif;
+}
+.author > p > a {
+  font-family: "Lobster", cursive;
+  color: #e7e3e3;
+}
+/* ============================ */
+.mainContainer > .rightBox {
+  padding: 10px 20px;
+  height: 100vh;
+  overflow: hidden auto;
+}
+.rightBox::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000000d2;
+  padding: 2px;
+}
+.rightBox::-webkit-scrollbar-thumb {
+  background-color: #8a8383;
+  border-radius: 20px;
+}
+.mainContainer > .rightBox > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.rightBox > div > .bookMarkBox {
+  height: fit-content;
+  max-width: 100%;
+  display: flex;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  position: relative;
+}
+.bookMarkBox > a {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Acme", sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+.bookMarkBox > a:hover {
+  text-decoration: underline;
+}
+.bookMarkBox > .vertIcon {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
+}
+/* =================================*/
+.loadingBox {
+  background-color: #00000017;
+  width: fit-content !important;
+  padding: 30px;
+  border-radius: 10px;
+  height: fit-content;
+  margin: 10px;
+}
+.errorBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ================================== */
+
+@media (max-width: 959px) {
+  .mainContainer {
+    overflow: auto;
+  }
+  .mainContainer .leftBox {
+    height: fit-content;
+  }
+  .leftBox > .author {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .mainContainer > .rightBox {
+    height: auto;
+  }
+}
